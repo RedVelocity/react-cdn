@@ -1,0 +1,50 @@
+/* Colors from style guide */
+:root {
+  --primary-light: #2c9bf5;
+  --primary: #0675ce;
+  --primary-dark: #00569c;
+  --secondary-light: #ff7b38;
+  --secondary: #ef5c11;
+  --secondary-dark: #c94400;
+  --tertiary-light: #50e8f2;
+  --tertiary: #25c1cb;
+  --tertiary-dark: #059ca6;
+  --success: #41b809;
+  --warning: #fcab10;
+}
+
+html,
+body {
+  box-sizing: border-box;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.gradient {
+  background-image: linear-gradient(
+    to right,
+    var(--primary),
+    var(--tertiary-dark)
+  );
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.success {
+  background-color: var(--success);
+}
+
+.warning {
+  background-color: var(--warning);
+}
+
+.full-width {
+  position: relative;
+  left: 50%;
+  min-width: 100vw;
+  transform: translateX(-50%);
+}
